@@ -1,0 +1,20 @@
+Source: php-net-socket
+Section: php
+Priority: optional
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Uploaders: Thijs Kinkhorst <thijs@debian.org>, Prach Pongpanich <prachpub@gmail.com>
+Build-Depends: debhelper (>= 9), pkg-php-tools
+Build-Depends-Indep: php-pear
+Standards-Version: 3.9.4
+Homepage: http://pear.php.net/package/Net_Socket
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-net-socket.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/php-net-socket.git;a=summary
+
+Package: php-net-socket
+Architecture: all
+Depends: ${misc:Depends}, php-pear
+Description: PHP PEAR Network Socket Interface module
+ Net_Socket is a class interface to TCP sockets.  It provides
+ blocking and non-blocking operation, with different reading
+ and writing modes (byte-wise, block-wise, line-wise and special
+ formats like network byte-order ip addresses).
